@@ -1,0 +1,9 @@
+1 - Após abrir o sistema é necessário que tenha uma tela visivel com as informações da semana de algumas salas e que possamos buscar uma sala especifica. (imagem DASHBORD);
+2 - Teremos que imprimir ou ter algo digital para mosrar as sala, que fica exposto. (imagem IMPRESSAO)
+3 - Analise preliminar verifica que teremos as seguinte entidades:
+	Usuario
+	Sala
+	Turma
+	Docente
+	Legenda
+	Periodo
