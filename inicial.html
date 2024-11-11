@@ -23,8 +23,9 @@
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            padding-top: 50px;
         }
- 
+        
         /* Estilo do cabeçalho */
         .navbar {
             display: fixed;
@@ -51,6 +52,7 @@
             font-size: 32px;
             font-weight: bold;
             color: #1a4f8b;
+            
         }
  
         /* Estilo da tabela */
@@ -93,7 +95,32 @@
             border: none;
             background-color: transparent;
         }
+        .filters {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+        }
         
+        .filter {
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter label {
+            margin-right: 10px;
+        }
+        
+        .filter select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+       
     </style>
 </head>
 <body>
@@ -101,8 +128,9 @@
     <header class="navbar navbar-dark bg-dark position-fixed w-100" style="top: 0; z-index: 1000;">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">Senac - Araçatuba</a>
         <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
+            <div class="nav-item text-nowrap d-flex align-items-center">
                 <a class="nav-link px-3" href="#">Sair</a>
+                <i class="fas fa-user-circle me-2"></i>
             </div>
         </div>
     </header>
@@ -110,6 +138,42 @@
  
     <!-- Título -->
     <div class="title">Semana</div>
+
+    
+    <!-- Filtros -->
+    <div class="filters">
+        <div class="filter">
+            <label for="sala">Sala:</label>
+            <select id="sala" name="sala">
+                <option value="">Todas</option>
+                <option value="1">LAB1</option>
+                <option value="2">LAB2</option>
+                <option value="3">LAB3</option>
+                <option value="4">LAB4</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="docente">Docente:</label>
+            <select id="docente" name="docente">
+                <option value="">Todos</option>
+                <option value="1">João</option>
+                <option value="2">Maria</option>
+                <option value="3">Pedro</option>
+                <option value="4">Ana</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso">
+                <option value="">Todos</option>
+                <option value="1">Informática</option>
+                <option value="2">Administração</option>
+                <option value="3">Enfermagem</option>
+                <option value="4">Contabilidade</option>
+            </select>
+        </div>
+    </div>
+    
  
     <!-- Tabela de horários -->
     <table class="schedule-table">
