@@ -98,6 +98,7 @@ select {
 
 table{
     padding: 20px;
+    color: white;
 }
 td{
     margin-top: 20px;
@@ -122,7 +123,6 @@ td{
 .horario{
     width: 100px;
     height: 20px;
-    color: darkslategray;
 }
 
 /* Contêiner para os blocos */
