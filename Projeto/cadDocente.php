@@ -58,8 +58,9 @@
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
             </div>
         </div>
-
-        <button class="submit-btn">Enviar</button>
+        <div class="botao">
+            <button class="submit-btn">Enviar</button>
+        </div>
     </div>
 </body>
 
