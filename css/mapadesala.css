@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 4px solid #f7931e;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin-left: 20px; 
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h2 {   
+    color: #0056b3;
+}
+
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada filtro */
+.filter1, .filter2, .filter3 {
+    flex: 1;
+    min-width: 150px;
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
+}
+
+/* Estilo para os rótulos dos filtros */
+.filter1 label, .filter2 label, .filter3 label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilo para os campos de seleção */
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter1, .filter2, .filter3 {
+        flex: none;
+        width: 100%; 
+    }
+}
+
+
+
+
+
+table{
+    padding: 20px;
+    color: white;
+}
+td{
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.info {
+    width: 110px;
+    height: 110px;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+.numero {
+    font-size: 3em;
+    font-weight: bold;
+}
+.texto {
+    font-size: 1em; 
+    margin-top: 5px;
+}
+.horario{
+    width: 100px;
+    height: 20px;
+}
+
+/* Contêiner para os blocos */
+.container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    max-width: 1200px;
+    width: 100%; 
+}
+
+/* Estilo para cada bloco */
+.bloco {
+    width: 10%;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+}
+
+/* Estilo para o texto informativo */
+.bloco p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; 
+}
+
+/* Bloco 1: Verde claro */
+.bloco.verde {
+    background-color: #a8d5ba;
+}
+
+/* Bloco 2: Laranja claro */
+.bloco.laranja {
+    background-color: #f6a5a1;
+}
+
+/* Bloco 3: Lilás claro */
+.bloco.lilas {
+    background-color: #c4a2d0;
+}
+
+/* Bloco 4: Rosa claro */
+.bloco.rosa {
+    background-color: #f2a1c7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
