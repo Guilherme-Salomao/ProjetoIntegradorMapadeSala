@@ -56,10 +56,10 @@ h2 {
 .filter1, .filter2, .filter3 {
     flex: 1;
     min-width: 150px;
-    background-color: #fff;
+    background-color: #e0e0e0;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
 }
 
 /* Estilo para os rótulos dos filtros */
