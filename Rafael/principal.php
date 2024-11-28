@@ -1,148 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php ?>
+
+<html lang="pt-br">
+
 <head>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário de Laboratórios</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            padding-top: 50px;
-        }
-        
-        /* Estilo do cabeçalho */
-        .navbar {
-            display: fixed;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #343a40;
-            color: #fff;
-            padding: 10px;
-        }
- 
-        .navbar-brand {
-            color: #fff;
-            font-size: 24px;
-            text-decoration: none;
-        }
- 
-        .nav-link {
-            color: #fff;
-            text-decoration: none;
-        }
- 
-        .title {
-            padding: 20px;
-            font-size: 32px;
-            font-weight: bold;
-            color: #1a4f8b;
-            
-        }
- 
-        /* Estilo da tabela */
-        .schedule-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 20px;
-        }
- 
-        .schedule-table th, .schedule-table td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
- 
-        .schedule-table th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
- 
-        /* Estilo dos quadrados no final */
-        .footer-squares {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
- 
-        .footer-squares div {
-            width: 40px;
-            height: 40px;
-            border: 1px solid #000;
-            margin: 5px;
-        }
- 
-        /* Estilo dos campos de input */
-        .input-field {
-            width: 100%;
-            white-space: normal;
-            text-align: center;
-            border: none;
-            background-color: transparent;
-        }
-        .filters {
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            color: black;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        .filter {
-            display: flex;
-            align-items: center;
-        }
-        
-        .filter label {
-            margin-right: 10px;
-        }
-        
-        .filter select {
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        
-       
-    </style>
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="navbar navbar-dark bg-dark position-fixed w-100" style="top: 0; z-index: 1000;">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html">Senac - Araçatuba</a>
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap d-flex align-items-center">
-                <a class="nav-link px-3" href="#">Sair</a>
-                <i class="fas fa-user-circle me-2"></i>
-            </div>
-        </div>
-    </header>
-    
- 
-    <!-- Título -->
-    <div class="title">Semana</div>
+    <title>Senac Araçatuba - Gestão</title>
+    <link rel="stylesheet" href="principal.css">
 
-    
-    <!-- Filtros -->
+</head>
+
+<body>
+
+    <?php
+    // Cabecalho da pagina
+    include 'global/header.php';
+    ?>
+
     <div class="filters">
-        <div class="filter">
+        <div class="filter1">
             <label for="sala">Sala:</label>
             <select id="sala" name="sala">
                 <option value="">Todas</option>
@@ -152,7 +28,7 @@
                 <option value="4">LAB4</option>
             </select>
         </div>
-        <div class="filter">
+        <div class="filter2">
             <label for="docente">Docente:</label>
             <select id="docente" name="docente">
                 <option value="">Todos</option>
@@ -162,7 +38,7 @@
                 <option value="4">Ana</option>
             </select>
         </div>
-        <div class="filter">
+        <div class="filter3">
             <label for="curso">Curso:</label>
             <select id="curso" name="curso">
                 <option value="">Todos</option>
@@ -173,44 +49,104 @@
             </select>
         </div>
     </div>
-    
- 
+
+
     <!-- Tabela de horários -->
-    <table class="schedule-table">
+    <table>
         <thead>
             <tr>
-                <th style="background-color: gray" rowspan="2">LAB</th>
-                <th style="background-color: #3c39eb7c" colspan="3">Segunda-Feira</th>
-                <th style="background-color: #f7dc6f91" colspan="3">Terça-Feira</th>
-                <th style="background-color: #3c39eb7c" colspan="3">Quarta-Feira</th>
-                <th style="background-color: #f7dc6f91" colspan="3">Quinta-Feira</th>
-                <th style="background-color: #3c39eb7c" colspan="3">Sexta-Feira</th>
-                <th style="background-color: #f7dc6f91" colspan="2">Sábado</th>
+                <th class="orange" rowspan="2">LAB</th>
+                <th class="blue" colspan="3">Segunda-Feira</th>
+                <th class="orange" colspan="3">Terça-Feira</th>
+                <th class="blue" colspan="3">Quarta-Feira</th>
+                <th class="orange" colspan="3">Quinta-Feira</th>
+                <th class="blue" colspan="3">Sexta-Feira</th>
+                <th class="orange" colspan="2">Sábado</th>
             </tr>
+            <!-- Segunda -->
             <tr>
-                <th style="background-color: #3c39eb7c">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #3c39eb7c">Tarde 13:30 - 17:30</th>
-                <th style="background-color: #3c39eb7c">Noite 19:00 - 22:30</th>
-                <th style="background-color: #f7dc6f91">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #f7dc6f91">Tarde 13:30 - 17:30</th>
-                <th style="background-color: #f7dc6f91">Noite 19:00 - 22:30</th>
-                <th style="background-color: #3c39eb7c">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #3c39eb7c">Tarde 13:30 - 17:30</th>
-                <th style="background-color: #3c39eb7c">Noite 19:00 - 22:30</th>
-                <th style="background-color: #f7dc6f91">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #f7dc6f91">Tarde 13:30 - 17:30</th>
-                <th style="background-color: #f7dc6f91">Noite 19:00 - 22:30</th>
-                <th style="background-color: #3c39eb7c">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #3c39eb7c">Tarde 13:30 - 17:30</th>
-                <th style="background-color: #3c39eb7c">Noite 19:00 - 22:30</th>
-                <th style="background-color: #f7dc6f91">Manhã 08:00 - 12:00</th>
-                <th style="background-color: #f7dc6f91">Tarde 13:30 - 17:30</th>
+                <th class="blue">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="blue">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
+                <th class="blue">
+                    <div>Noite</div>
+                    <div class="horario">19:00 - 22:30</div>
+                </th>
+                <!-- Terça -->
+                <th class="orange">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="orange">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
+                <th class="orange">
+                    <div>Noite</div>
+                    <div class="horario">19:00 - 22:30</div>
+                </th>
+                <!-- Quarta -->
+                <th class="blue">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="blue">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
+                <th class="blue">
+                    <div>Noite</div>
+                    <div class="horario">19:00 - 22:30</div>
+                </th>
+                <!-- Quinta -->
+                <th class="orange">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="orange">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
+                <th class="orange">
+                    <div>Noite</div>
+                    <div class="horario">19:00 - 22:30</div>
+                </th>
+                <!-- Sexta -->
+                <th class="blue">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="blue">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
+                <th class="blue">
+                    <div>Noite</div>
+                    <div class="horario">19:00 - 22:30</div>
+                </th>
+                <!-- Sabado -->
+                <th class="orange">
+                    <div>Manhã</div>
+                    <div class="horario">08:00 - 12:00</div>
+                </th>
+                <th class="orange">
+                    <div>Tarde</div>
+                    <div class="horario">13:30 - 17:30</div>
+                </th>
             </tr>
         </thead>
         <tbody>
             <!-- Linhas da tabela com campos de input -->
             <tr>
-                <td style="background-color: #3c39eb7c">1 Informatica 18 alunos</td>
+                <td class="info">
+                    <div class="numero">1</div>
+                    <div class="texto">Informática 18 alunos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -230,7 +166,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">2 Informatica 20 alunos</td>
+                <td class="info">
+                    <div class="numero">2</div>
+                    <div class="texto">Informática 20 alunos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -250,7 +189,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">3 Informatica 40</td>
+                <td class="info">
+                    <div class="numero">3</div>
+                    <div class="texto">Informática 40 alunos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -270,7 +212,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">4</td>
+                <td class="info">
+                    <div class="numero">4</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -290,7 +235,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">5 Informatica 35</td>
+                <td class="info">
+                    <div class="numero">5</div>
+                    <div class="texto">Informatica 35 alnuos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -310,7 +258,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">6 Hardware 28 alunos</td>
+                <td class="info">
+                    <div class="numero">6</div>
+                    <div class="texto">Hardware 28 alnuos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -330,7 +281,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">7 Enfermagem</td>
+                <td class="info">
+                    <div class="numero">7</div>
+                    <div class="texto">Infermagem</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -350,7 +304,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">8 Bem-Estar</td>
+                <td class="info">
+                    <div class="numero">8</div>
+                    <div class="texto">Bem-Estar</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -370,7 +327,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">9 beleza</td>
+                <td class="info">
+                    <div class="numero">9</div>
+                    <div class="texto">Beleza</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -390,7 +350,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">10</td>
+                <td class="info">
+                    <div class="numero">10</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -410,7 +373,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">11</td>
+                <td class="info">
+                    <div class="numero">11</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -430,7 +396,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">12</td>
+                <td class="info">
+                    <div class="numero">12</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -450,7 +419,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">13 Informatica 23 alunos</td>
+                <td class="info">
+                    <div class="numero">13</div>
+                    <div class="texto">Informática 23 alunos</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -470,7 +442,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">14</td>
+                <td class="info">
+                    <div class="numero">14</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -490,7 +465,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">15</td>
+                <td class="info">
+                    <div class="numero">15</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -510,7 +488,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">16</td>
+                <td class="info">
+                    <div class="numero">16</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -530,7 +511,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">17</td>
+                <td class="info">
+                    <div class="numero">17</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -550,7 +534,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">18</td>
+                <td class="info">
+                    <div class="numero">18</div>
+                    <div class="texto">...<div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -570,7 +557,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">19</td>
+                <td class="info">
+                    <div class="numero">19</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -590,7 +580,10 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">20</td>
+                <td class="info">
+                    <div class="numero">20</div>
+                    <div class="texto">...</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -610,7 +603,9 @@
                 <td></td>
             </tr>
             <tr>
-                <td style="background-color: #3c39eb7c">Biblioteca</td>
+                <td class="info">
+                    <div class="texto">Biblioteca</div>
+                </td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -629,27 +624,27 @@
                 <td></td>
                 <td></td>
             </tr>
-            
         </tbody>
     </table>
 
-    <div class="flex justify-around mt-8">
-        <div class="text-center">
-          <div class="border border-gray-300 p-10 bg-pink-400"></div>
-          <p>Legenda 1</p>
+    <div class="container">
+        <div class="bloco verde">
+            <p>Legenda 1</p>
         </div>
-        <div class="text-center">
-          <div class="border border-gray-300 p-10 bg-blue-500"></div>
+        <div class="bloco laranja">
             <p>Legenda 2</p>
         </div>
-        <div class="text-center">
-            <div class="border border-gray-300 p-10 bg-green-500"></div>
+        <div class="bloco lilas">
             <p>Legenda 3</p>
         </div>
-        <div class="text-center">
-            <div class="border border-gray-300 p-10 bg-red-500"></div>
+        <div class="bloco rosa">
             <p>Legenda 4</p>
         </div>
-        
+    </div>
+
 </body>
+
 </html>
+
+<?php
+?>
