@@ -149,10 +149,10 @@
                         <div class="numero">1</div>
                         <div class="texto">Informática 18 alunos</div>
                     </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="bloco verde"></td>
+                    <td class="bloco laranja"></td>
+                    <td class="bloco lilas"></td>
+                    <td class="bloco rosa"></td>
                     <td></td>
                     <td></td>
                     <td></td>

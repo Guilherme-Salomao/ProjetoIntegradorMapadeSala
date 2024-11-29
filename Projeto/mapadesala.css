@@ -159,10 +159,9 @@ td{
 /* Contêiner para os blocos */
 .container {
     display: flex;
-    justify-content: space-between; 
-    gap: 20px; 
-    max-width: 1200px;
-    width: 100%; 
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 /* Estilo para cada bloco */
