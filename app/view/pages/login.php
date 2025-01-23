@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login - Senac Araçatuba</title>
-    <link rel="stylesheet" href="login.giovanna.css">
+    <link rel="stylesheet" href="../../../assets/css/login.css">
+
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,7 +14,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="img/Senac_logo.svg.png" alt="Logo Senac" class="logo">
+            <img src="../../../assets/images/Senac_logo.svg.png" alt="Logo Senac" class="logo">
             <h2>Senac Araçatuba</h2>
         </div>
         
