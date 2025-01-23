@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    
     <?php
     // Cabecalho da pagina
     include 'global/header.php';
