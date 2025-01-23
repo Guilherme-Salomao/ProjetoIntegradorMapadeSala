@@ -14,7 +14,7 @@
     
     <?php
     // Cabecalho da pagina
-    include 'global/header.php';
+    include '../partials/header.php';
     ?>
 
     <div class="conteudo">
