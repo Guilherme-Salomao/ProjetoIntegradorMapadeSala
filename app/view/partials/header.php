@@ -1,14 +1,12 @@
-<?php
-
-?>
-
-<header>
-<div class="header-container">
-    <img style="padding-left: 50px;" src="img/Senac_logo.svg.png" alt="Logo Senac" class="logo">
-    <h2 style="padding-left: 50px;">Sistema de horário Araçatuba</h2>
-</div>
-</header>
-
-<?php
-
-?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title ?? 'Mapa de Sala - Senac Araçatuba'; ?></title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mapa MSSA</h1>
+    </header>
