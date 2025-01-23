@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senac Araçatuba - Gestão</title>
-    <link rel="stylesheet" href="mapa_de_sala.css">
+    <link rel="stylesheet" href="../../../assets/css/mapa_de_sala.css">
 
 </head>
 
 <body>
-
+    
     <?php
     // Cabecalho da pagina
     include 'global/header.php';
