@@ -1,0 +1,43 @@
+header {
+    background-color: #F7931e;
+}
+
+.sidebar {
+    background-color: #b3d7e7;
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.9); 
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #4682B4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sidebar a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.9);
+    background-color: #4682B4;
+}
+
+.sidebar .active {
+    background-color: #4682B4;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
