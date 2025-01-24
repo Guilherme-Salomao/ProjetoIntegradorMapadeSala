@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Arquivo CSS -->
-    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/user.css">
 </head>
 
 <body>
@@ -67,18 +67,23 @@
                             </div>
                             <div class="col-sm-6">
                                 <label class="form-label">Senha</label>
-                                <input type="tel" class="form-control" name="telefone" required>
+                                <input type="password" class="form-control" name="senha" required>
                                 <div class="invalid-feedback">Campo obrigatório.</div>
                             </div>
                             <div class="col-sm-6">
                                 <label class="form-label">Nome de Usuário</label>
-                                <input type="email" class="form-control" name="email" required>
+                                <input type="text" class="form-control" name="usuario" required>
                                 <div class="invalid-feedback">Campo obrigatório.</div>
                             </div>
-                            
                         </div>
+
                         <hr class="my-4">
-                        <button class="btn btn-primary" type="submit">Cadastrar Docente</button>
+
+                        <!-- Botões -->
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
+                            <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+                        </div>
                     </form>
                 </div>
             </main>
