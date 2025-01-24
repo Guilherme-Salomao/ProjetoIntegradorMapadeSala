@@ -53,35 +53,34 @@
                 </div>
 
                 <!-- Formulário -->
-                <div class="form-container">
-                    <form id="formCadastro" action="?acao=cadastrar" method="post" novalidate>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label class="form-label">Login</label>
-                                <input type="text" class="form-control" name="nome" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="form-label">Senha</label>
-                                <input type="password" class="form-control" name="senha" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
-                            </div>
-                            <div class="col-sm-6">
-                                <label class="form-label">Nome de Usuário</label>
-                                <input type="text" class="form-control" name="usuario" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
-                            </div>
-                        </div>
+    <div class="form-container">
+        <form id="formCadastro" action="?acao=cadastrar" method="post" novalidate>
+        <div class="mb-3">
+            <label class="form-label">Login</label>
+            <input type="text" class="form-control" name="nome" required>
+            <div class="invalid-feedback">Campo obrigatório.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" class="form-control" name="senha" required>
+            <div class="invalid-feedback">Campo obrigatório.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nome de Usuário</label>
+            <input type="text" class="form-control" name="usuario" required>
+            <div class="invalid-feedback">Campo obrigatório.</div>
+        </div>
 
-                        <hr class="my-4">
+        <hr class="my-4">
 
-                        <!-- Botões -->
-                        <div class="d-flex justify-content-between">
-                            <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
-                            <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
-                        </div>
-                    </form>
-                </div>
+        <!-- Botões -->
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
+            <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+        </div>
+    </form>
+</div>
+
             </main>
         </div>
     </div>
