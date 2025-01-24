@@ -9,21 +9,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Arquivo CSS -->
+    <!-- Arquivo CSS e JS-->
     <link rel="stylesheet" href="../../../assets/css/user.css">
+    <script src="../../../assets/js/user.js" defer></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Senac</a>
-        <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </header>
-
+    
+    <?php
+        // Cabeçalho da página
+        include '../partials/header.php';
+    ?>
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Lateral -->
