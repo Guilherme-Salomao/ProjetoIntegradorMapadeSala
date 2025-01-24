@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------------------------------------
+/* Estilo do body */
+/*-------------------------------------------------------------------------------------------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh;
+}
+/*---------------------------------------------------------------------------------------------------------
+/* Header Geral */
+/*-------------------------------------------------------------------------------------------------------*/
+header {
+    position: fixed; /* Fixa no topo */
+    top: 0; /* Alinha no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Ocupa toda a largura */
+    background-color: #fff; /* Fundo branco */
+    border-bottom: 4px solid orange; /* Linha inferior */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    z-index: 10; /* Sobreposição */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+.logo img {
+    max-width: 60px; /* Tamanho fixo da logo */
+    height: auto; /* Mantém a proporção */
+}
+.logo h2{
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+.user-img {
+    max-width: 40px; /* Tamanho fixo da imagem do usuário */
+    height: auto; /* Mantém a proporção */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+.col-sm-7 {
+    display: flex; /* Mantém logo e título na mesma linha */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Espaçamento entre logo e título */
+}
+.col-sm-5 {
+    display: flex; /* Mantém foto e nome na mesma linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: end; /* Alinha à direita */
+    gap: 10px; /* Espaçamento entre imagem e nome */
+}
+/*-------------------------------------------------------------------------------------------------------*/
