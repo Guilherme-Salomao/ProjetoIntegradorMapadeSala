@@ -1,0 +1,53 @@
+body {
+    background-color: #f4f4f4; /* Fundo neutro */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0b57ad; /* Azul escuro da logo */
+    color: white; /* Texto branco para contraste */
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+.form-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white; /* Fundo branco no formulário */
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-top: 5px solid #ff6f00; /* Laranja da logo */
+}
+
+.btn-primary {
+    background-color: #ff6f00; /* Botão com laranja da logo */
+    border-color: #ff6f00;
+}
+
+.btn-primary:hover {
+    background-color: #e65c00; /* Tom mais escuro ao passar o mouse */
+    border-color: #e65c00;
+}
+
+footer {
+    background-color: #1165c5; /* Azul escuro no rodapé */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30rem;
+}
+
+footer p {
+    margin: 0;
+}

@@ -9,21 +9,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Arquivo CSS -->
-    <link href="" rel="stylesheet">
+    <!-- Arquivo CSS e JS-->
+    <link rel="stylesheet" href="../../../assets/css/user.css">
+    <script src="../../../assets/js/user.js" defer></script>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Senac</a>
-        <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </header>
-
+    
+    <?php
+        // Cabeçalho da página
+        include '../partials/header.php';
+    ?>
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Lateral -->
@@ -59,26 +55,40 @@
                 <!-- Formulário -->
                 <div class="form-container">
                     <form id="formCadastro" action="?acao=cadastrar" method="post" novalidate>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label class="form-label">Login</label>
-                                <input type="text" class="form-control" name="nome" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
+                    <div class="mb-3">
+                        <label class="form-label">Login</label>
+                        <input type="text" class="form-control" name="nome" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
                             </div>
-                            <div class="col-sm-6">
-                                <label class="form-label">Senha</label>
-                                <input type="tel" class="form-control" name="telefone" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
+                        <div class="mb-3">
+                            <label class="form-label">Senha</label>
+                            <input type="password" class="form-control" name="senha" required>
+                        <div class="invalid-feedback">Campo obrigatório.</div>
                             </div>
-                            <div class="col-sm-6">
-                                <label class="form-label">Nome de Usuário</label>
-                                <input type="email" class="form-control" name="email" required>
-                                <div class="invalid-feedback">Campo obrigatório.</div>
-                            </div>
-                            
-                        </div>
+                <div class="mb-3">
+                    <label class="form-label">Nome de Usuário</label>
+                    <input type="text" class="form-control" name="usuario" required>
+                    <div class="invalid-feedback">Campo obrigatório.</div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Botões -->
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
+                    <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+                </div>
+                </form>
+                </div>
+
+
                         <hr class="my-4">
-                        <button class="btn btn-primary" type="submit">Cadastrar Docente</button>
+
+                        <!-- Botões -->
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-primary" type="submit">Cadastrar Usuário</button>
+                            <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+                        </div>
                     </form>
                 </div>
             </main>
