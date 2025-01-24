@@ -1,3 +1,4 @@
+<!--
 <?php ?>
 
 <html lang="pt-br">
@@ -9,9 +10,9 @@
     <link rel="stylesheet" href="../../../assets/css/mapa_de_sala.css">
 
 </head>
+-->
 
-<body>
-    
+   
     <?php
     // Cabecalho da pagina
     include '../partials/header.php';
